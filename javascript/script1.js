@@ -15,7 +15,6 @@ function toggleDarkMode() {
   }
 }
 
-
 const slides = [
   document.getElementById('slide1'),
   document.getElementById('slide2'),
