@@ -265,7 +265,6 @@ p{
   transition: background-color 20.5s ease, color 20.5s ease;
 }
 
-
 .doboz{
   background-color: var(--bg-color);
   color: var(--text-color);
