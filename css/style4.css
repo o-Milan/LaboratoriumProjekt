@@ -1,0 +1,321 @@
+.navbar {
+  background: linear-gradient(150deg, #011d45 0%, #1e7883 47%, rgba(237, 237, 237, 1) 100%) !important;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+ 
+  
+  }
+
+.navbar-brand,
+.navbar-brand2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  white-space: nowrap;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link {
+  border: 1px solid black;
+  border-radius: 10%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+
+}
+
+.navbarC{
+  border: 1px solid black;
+  border-radius: 10%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  color: black;
+  font-weight: bolder;
+
+}
+
+.navbar-brand img,
+.navbar-brand2 img {
+  border-radius: 25%;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .dropdown-menu {
+  z-index: 9999;
+}
+
+/* navbar reszponzív */
+@media (max-width: 992px) {
+
+  .navbar-brand,
+  .navbar-brand2 {
+    font-size: 16px;
+  }
+
+  .navbar-brand img,
+  .navbar-brand2 img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+  }
+
+  .navbar-brand2 {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 14px;
+  }
+
+  .navbar-brand img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .navbar-toggler {
+    border-color: white;
+  }
+
+  .navbar-nav {
+    font-size: 14px;
+  }
+}
+
+.btn {
+  border: 2px 2px black;
+  background-color: #349eeb;
+  color: black;
+}
+
+
+
+body {
+  background-image: url("/kepek/real.jpg");
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-position: center;
+  height: 170vh;
+  margin:0;
+
+}
+
+.dark-mode {
+  background-color: #161616;
+  color: white;
+}
+
+.toggle-icon {
+  height: 1.4em;
+  width: 1.4em;
+  position: absolute;
+  top: 50%;
+  left: 0.5em;
+  transform: translateY(-50%);
+  transition: transform 0.4s;
+}
+
+.switch input:checked+.slider .toggle-icon {
+  transform: translateX(1.5em) rotate(180deg);
+  content: url('/kepek/moon.png');
+}
+
+
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(202, 202, 202);
+  transition: .4s;
+  border-radius: 10px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 8px;
+  left: 0.3em;
+  bottom: 0.3em;
+  transform: rotate(270deg);
+  background-color: rgb(255, 255, 255);
+  transition: .4s;
+}
+
+.switch input:checked+.slider {
+  background-color: #222222;
+}
+
+.switch input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.switch input:checked+.slider:before {
+  transform: translateX(1.5em);
+}
+
+h1{
+  padding-top: 280px;
+  text-align: center;
+  font-size: 45px;
+  text-decoration: underline;
+}
+
+.card-body {
+  width: 100%;
+}
+
+.card {
+  width: 18vw; /* kisebb szélesség */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  height: 55vh;
+  
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vw; /* kisebb rés a kártyák között */
+  
+}
+
+.cim{
+  font-size: 45px;
+  font-weight: bold;
+
+
+}
+
+.szoveg{
+  margin-top: 3rem;
+}
+
+.szoveg2{
+  font-weight: bold;
+
+}
+
+.szoveg3{
+  margin-top: 3rem;
+}
+
+
+.szoveg4{
+  font-weight: bold;
+}
+
+.szoveg5{
+  margin-top: 4rem;
+}
+
+.h2o{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 1rem;
+  color: black;
+}
+
+.fo{
+  color: black;
+}
+
+.ugy{
+  text-align: left;
+  font-size: 20px;
+  margin-top: 15rem;
+  margin-left: 1rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+.ugy2{
+  text-align: left;
+  font-size: 20px;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  font-weight: normal;
+}
+
+h3{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 8rem;
+}
+
+.alsobox{
+  border: black solid 1px;
+  border-radius: 1%;
+  width: 50%;
+  border-width: 2px;
+  background-color: white;
+  
+}
+
+.ugy3{
+  text-align: left;
+  font-size: 20px;
+  margin-left: 1rem;
+  font-weight: normal;
+
+}
+
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+  transition: background-color;
+}
+
+.dark-mode {
+  --bg-color: black;
+  --text-color: white;
+  transition: background-color;
+}
+
+
+.alsobox{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

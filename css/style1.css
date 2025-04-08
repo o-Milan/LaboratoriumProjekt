@@ -1,0 +1,306 @@
+.navbar {
+  background: linear-gradient(150deg, rgba(1, 29, 69, 1) 0%, rgba(30, 120, 131, 1) 47%, rgba(237, 237, 237, 1) 100%) !important;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+}
+
+.navbar-brand,
+.navbar-brand2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  white-space: nowrap;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link {
+  border: 1px solid black;
+  border-radius: 10%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  color: black;
+
+}
+
+.navbarC{
+  border: 1px solid black;
+  border-radius: 10%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  color: black;
+  font-weight: bolder;
+
+}
+
+.navbar-brand img,
+.navbar-brand2 img {
+  border-radius: 25%;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .dropdown-menu {
+  z-index: 9999;
+}
+
+/* navbar reszponzív */
+@media (max-width: 992px) {
+
+  .navbar-brand,
+  .navbar-brand2 {
+    font-size: 16px;
+  }
+
+  .navbar-brand img,
+  .navbar-brand2 img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+  }
+
+  .navbar-brand2 {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 14px;
+  }
+
+  .navbar-brand img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .navbar-toggler {
+    border-color: white;
+  }
+
+  .navbar-nav {
+    font-size: 14px;
+  }
+}
+
+
+
+body {
+  transition: background-color 0.4s, color 0.4s;
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #161616;
+  color: white;
+}
+
+.toggle-icon {
+  height: 1.4em;
+  width: 1.4em;
+  position: absolute;
+  top: 50%;
+  left: 0.5em;
+  transform: translateY(-50%);
+  transition: transform 0.4s;
+}
+
+.switch input:checked+.slider .toggle-icon {
+  transform: translateX(1.5em) rotate(180deg);
+}
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(202, 202, 202);
+  transition: .4s;
+  border-radius: 10px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 8px;
+  left: 0.3em;
+  bottom: 0.3em;
+  transform: rotate(270deg);
+  background-color: rgb(255, 255, 255);
+  transition: .4s;
+}
+
+.switch input:checked+.slider {
+  background-color: #222222;
+}
+
+.switch input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.switch input:checked+.slider:before {
+  transform: translateX(1.5em);
+}
+
+
+
+
+
+/* Slideshow */
+
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  overflow-x: hidden;
+}
+
+.scroll-container {
+  height: 100vh;
+}
+
+.slider-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 44vw;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+  font-size: 2rem;
+  z-index: 4;
+  text-shadow: 2px 2px 10px black;
+  width: 25%;
+}
+
+.btn-slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 5;
+  transition: background-color 0.3s;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.btn-slide:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.large-text {
+  font-size: 1.2rem;
+}
+
+.small-text {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.gif-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row.mt-5 {
+  margin-top: 200px;
+}
+
+.text-block h3 {
+  font-size: 2rem;
+}
+
+.text-block p {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .slide {
+    object-fit: cover;
+    height: 50vh;
+    max-width: 100%;
+  }
+
+  .slide-text {
+    font-size: 1.5rem;
+    left: 5%;
+  }
+
+  .btn-slide {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .slide-text {
+    font-size: 1.2rem;
+  }
+
+  .btn-slide {
+    font-size: 1.2rem;
+  }
+}
