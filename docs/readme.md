@@ -6,6 +6,24 @@
 
 ## **Projektfelelős**: Őze Milán
 
+## **Munka folyamata**:
+
+### Őze Milán:
+- Dokumentálás 
+- Index.html
+- Bejelentkezes.html
+- Support.html
+- CSS nagy része
+- Javascript
+- GitHub
+
+### Wöller Tamás:
+- Trello
+- Figma Wireframe, Design terv
+- Vizsgalataink.html
+- Idopontfoglalas.html
+- CSS
+
 ## **Források**:
 
 ### > Kód: 
