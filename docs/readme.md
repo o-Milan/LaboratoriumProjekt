@@ -52,3 +52,9 @@
 ### > Figma Wireframe létrehozása:
 - Őze Milán
 - Wöller Tamás
+
+### > Figma Link:
+- https://www.figma.com/design/OSNkFrth8uMA2QpqhUGN7f/Info-projektmunka---Breakin--Labs?m=auto&t=LXJ2lppVLfqY3BXF-6
+
+### > Trello Link:
+- https://trello.com/b/IQN3V4Wh/maganlaboratoium
