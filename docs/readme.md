@@ -6,6 +6,24 @@
 
 ## **Projektfelelős**: Őze Milán
 
+## **Munka folyamata**:
+
+### Őze Milán:
+- Dokumentálás 
+- Index.html
+- Bejelentkezes.html
+- Support.html
+- CSS nagy része
+- Javascript
+- GitHub
+
+### Wöller Tamás:
+- Trello
+- Figma Wireframe, Design terv
+- Vizsgalataink.html
+- Idopontfoglalas.html
+- CSS
+
 ## **Források**:
 
 ### > Kód: 
@@ -52,3 +70,9 @@
 ### > Figma Wireframe létrehozása:
 - Őze Milán
 - Wöller Tamás
+
+### > Figma Link:
+- https://www.figma.com/design/OSNkFrth8uMA2QpqhUGN7f/Info-projektmunka---Breakin--Labs?m=auto&t=LXJ2lppVLfqY3BXF-6
+
+### > Trello Link:
+- https://trello.com/b/IQN3V4Wh/maganlaboratoium
